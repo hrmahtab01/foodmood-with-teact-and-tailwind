@@ -7,22 +7,26 @@ import Delivery from './components/Delivery'
 import Team from './components/Team'
 import Discount from './components/Discount'
 import Footer from './components/Footer'
-import { useState } from 'react'
+
 
 const App = () => {
 
-  
 
-  
+  let toggleTheme = ()=>{ 
+    document.documentElement.classList.toggle("dark");
+  }
   return (
     <>
-     <Navbar/>
-      <Food/>
+    <button onClick={toggleTheme} className='p-[10px] rounded-full bg-blue-300 dark:bg-teal-500 text-[30px] text-black dark:text-white fixed right-[20px] bottom-[20px]'>change theme</button>
+<Navbar/>
+<Food/>
       <Outlets/>
       <Delivery/>
       <Team/>
       <Discount/>
       <Footer/>
+  
+   
      
   
     </>

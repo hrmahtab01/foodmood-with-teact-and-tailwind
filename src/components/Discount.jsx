@@ -3,7 +3,7 @@ import React from 'react'
 const Discount = () => {
   return (
     <>
-      <section className='bg-[#FFCC00] px-[120px] pt-[65px] pb-[135px] mb-[75px]'>
+      <section className='bg-[#FFCC00] px-[120px] pt-[65px] pb-[135px] mb-[75px] dark:bg-black dark:text-[#fff]'>
         <div className='max-w-[1200px] mx-auto'>
             <div className='flex gap-[30px] '>
                 <div>
